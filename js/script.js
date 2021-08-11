@@ -287,4 +287,5 @@ function reset() {
     document.getElementsByClassName("error")[0].style.display = 'none';
     document.querySelector('#bill').style.border = "none";
     document.querySelector('#custom_container').style.display = "none";
+    document.querySelector('#custom_input').value = "";
 }
