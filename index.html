@@ -38,11 +38,15 @@
                 <p class="subtitle">Select Tips %</p>
                 <div id="tips_buttons">
                     <input type="button" value="5%" onclick="tip5()" class="button_tip">
-                    <button class="button_tip" onclick="tip10()">10%</button>
-                    <button class="button_tip" onclick="tip15()">15%</button>
-                    <button class="button_tip" onclick="tip25()">25%</button>
-                    <button class="button_tip" onclick="tip50()">50%</button>
-                    <button class="button_tip" id="custom" onclick="custom()">Custom</button>
+                    <input type="button" value="10%" onclick="tip10()" class="button_tip">
+                    <input type="button" value="15%" onclick="tip15()" class="button_tip">
+                    <input type="button" value="25%" onclick="tip25()" class="button_tip">
+                    <input type="button" value="50%" onclick="tip50()" class="button_tip">
+                    <input type="button" value="Custom" onclick="custom()" class="button_tip custom">
+                    <div style="display: none;" id="custom_container">
+                        <input type="number" name="" id="custom_input" placeholder = "%" required>
+                        <input type="button" value="Ok" class="custom_calc" onclick="custom_calc()">
+                    </div>
                 </div>  
             </div>
         </form>
