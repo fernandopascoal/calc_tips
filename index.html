@@ -14,31 +14,38 @@
     </main>
 
     <section id="tips_calc">
-        <div id="form">
-            <p class="subtitle">Bill</p>
-            <div id="bill">
-                <img src="images/icon-dollar.svg" alt="$" class="image">
-                <input type="number" id="value" placeholder="0">
-            </div>
 
-            <p class="subtitle">Number of People</p>
-            <div id="n_peoples">
-                <img src="images/icon-person.svg" alt="" class="image">
-                <input type="number" name="peoples" id="peoples" placeholder="0">
-            </div>
+        <form action="" id="form_container">
+            <div id="form">
+                <div class="text_content">
+                    <span class="subtitle">Bill</span>
+                    <span class="error" style="display: none;" id="error_bill">Can't be zero!</span>
+                </div>
+                <div id="bill">
+                    <img src="images/icon-dollar.svg" alt="$" class="image">
+                    <input type="number" id="value" placeholder="0" required>
+                </div>
 
-            <p class="subtitle">Select Tips %</p>
-            <div id="tips_buttons">
-                <button class="button_tip" onclick="tip5()">5%</button>
-                <button class="button_tip" onclick="tip10()">10%</button>
-                <button class="button_tip" onclick="tip15()">15%</button>
-                <button class="button_tip" onclick="tip25()">25%</button>
-                <button class="button_tip" onclick="tip50()">50%</button>
-                <button class="button_tip" id="custom" onclick="custom()">Custom</button>
-            </div>
+                <div class="text_content">
+                    <span class="subtitle">Number of People</span>
+                    <span class="error" style="display: none;" id="error_people">Can't be zero!</span>
+                </div>
+                <div id="n_peoples">
+                    <img src="images/icon-person.svg" alt="" class="image">
+                    <input type="number" name="peoples" id="peoples" placeholder="0" required>
+                </div>
 
-            
-        </div>
+                <p class="subtitle">Select Tips %</p>
+                <div id="tips_buttons">
+                    <input type="button" value="5%" onclick="tip5()" class="button_tip">
+                    <button class="button_tip" onclick="tip10()">10%</button>
+                    <button class="button_tip" onclick="tip15()">15%</button>
+                    <button class="button_tip" onclick="tip25()">25%</button>
+                    <button class="button_tip" onclick="tip50()">50%</button>
+                    <button class="button_tip" id="custom" onclick="custom()">Custom</button>
+                </div>  
+            </div>
+        </form>
         <section id="total_container">
             <div>
                 <div class="tip_amount">

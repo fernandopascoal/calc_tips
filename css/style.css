@@ -29,9 +29,18 @@ html {
     border-radius: 20px 20px 0px 0px;
 }
 
+.text_content {
+    display: flex;
+    justify-content: space-between;
+}
+
 .subtitle {
     color: hsl(186, 14%, 43%);
     margin-bottom: 5px;
+}
+
+.error {
+    color: red;
 }
 
 #bill {
@@ -163,11 +172,16 @@ html {
         height: 300px;
         display: flex;
         margin: auto;
+        padding: auto;
         border-radius: 10px;
     }
 
-    #form {
+    #form_container {
         width: 50%;
+    }
+
+    #form {
+        width: 100%;
         margin-right: 15px;
     }
 
