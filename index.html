@@ -4,49 +4,50 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
     <title>Splitter</title>
 </head>
 <body>
 
-    <main>
+    <main id="logo">
         <img src="images/logo.svg" alt="Splitter">
     </main>
-    <section>
-        <p>Bill</p>
-        <div>
-            <img src="images/icon-dollar.svg" alt="$">
+    <section id="tips_calc">
+        <p class="subtitle">Bill</p>
+        <div id="bill">
+            <img src="images/icon-dollar.svg" alt="$" class="image">
             <input type="number" name="value " id="value">
         </div>
-        <p>Select Tips %</p>
-        <div>
-            <button>5%</button>
-            <button>10%</button>
-            <button>15%</button>
-            <button>25%</button>
-            <button>50%</button>
-            <button>Custom</button>
+        <p class="subtitle">Select Tips %</p>
+        <div id="tips_buttons">
+            <button class="button_tip">5%</button>
+            <button class="button_tip">10%</button>
+            <button class="button_tip">15%</button>
+            <button class="button_tip">25%</button>
+            <button class="button_tip">50%</button>
+            <button class="button_tip" id="custom">Custom</button>
         </div>
-        <p>Number of People</p>
-        <div>
-            <img src="images/icon-person.svg" alt="">
+        <p class="subtitle">Number of People</p>
+        <div id="n_peoples">
+            <img src="images/icon-person.svg" alt="" class="image">
             <input type="number" name="peoples" id="peoples">
         </div>
-        <section>
-            <div>
+        <section id="total_container">
+            <div class="tip_amount">
                 <div>
-                    <p>Tip Amout</p>
-                    <p>/person</p>
+                    <p class="tip_text">Tip Amount</p>
+                    <p class="subtitle">/person</p>
                 </div>
-                <p>10,00</p>
+                <p class="tip_value">10,00</p>
             </div>
-            <div>
+            <div class="tip_amount">
                 <div>
-                    <p>Total</p>
-                    <p>/person</p>
+                    <p class="tip_text">Total</p>
+                    <p class="subtitle">/person</p>
                 </div>
-                <p>10,00</p>
+                <p class="tip_value">10,00</p>
             </div>
-            <button>Reset</button>
+            <button id="reset">Reset</button>
         </section>
 
     </section>

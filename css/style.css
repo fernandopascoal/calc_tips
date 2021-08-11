@@ -1,0 +1,148 @@
+*{
+    margin:0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: monospace;
+    max-width: 600px;
+}
+
+html {
+    margin: auto;
+}
+
+#logo {
+    background-color: hsl(185, 41%, 84%);
+    display: grid;
+    grid: 12;
+    width: 100%;
+    height: 25vh;
+    align-items: center;
+    justify-content: center;
+}
+
+#tips_calc {
+    margin-top: -20px;
+    background-color: white;
+    padding: 4vh;
+    height: 100%;
+    border-radius: 20px 20px 0px 0px;
+}
+
+.subtitle {
+    color: hsl(186, 14%, 43%);
+    margin-bottom: 5px;
+}
+
+#bill {
+    width: 100%;
+    height: 30px;
+    background-color:  hsl(189, 41%, 97%);
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 25px;
+}
+
+.image {
+    width: 12px;
+    height: 12px;
+    margin-left: 10px;
+}
+
+#value {
+    border: none;
+    background-color: inherit;
+    width: 90%;
+    color: hsl(183, 100%, 15%);
+    height: inherit;
+    font-size: 20px;
+    font-weight: 500;
+    text-align: end;
+    outline: none;
+    padding-right: 10px;
+}
+
+#tips_buttons{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+
+.button_tip{
+    width: 47%;
+    height: 5vh;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 3px;
+    font-size: 20px;
+    color: white;
+    background-color: hsl(183, 100%, 15%);
+    opacity: 0.9;
+}
+
+#custom {
+    background-color: hsl(189, 41%, 97%);
+    color: hsl(183, 100%, 15%);
+}
+
+#n_peoples {
+    width: 100%;
+    height: 30px;
+    background-color:  hsl(189, 41%, 97%);
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 25px;
+}
+
+#peoples {
+    border: none;
+    background-color: inherit;
+    width: 90%;
+    color: hsl(183, 100%, 15%);
+    height: inherit;
+    font-size: 20px;
+    font-weight: 500;
+    text-align: end;
+    outline: none;
+    padding-right: 10px;
+}
+
+#total_container {
+    width: 100%;
+    background-color: hsl(183, 100%, 15%);
+    padding: 10px 20px;
+    border-radius: 15px;
+}
+
+.tip_amount {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.tip_text {
+    color: white;
+}
+
+.tip_value {
+    font-size: 20px;
+    font-weight: bold;
+    color: hsl(172, 67%, 45%);
+}
+
+#reset {
+    width: 100%;
+    height: 5vh;
+    background-color: hsl(172, 67%, 45%);
+    color: hsl(183, 100%, 15%);
+    border: none;
+    border-radius: 5px;
+    margin: 10px 0px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
