@@ -60,7 +60,8 @@ html {
     font-weight: 500;
     text-align: end;
     outline: none;
-    padding-right: 10px;
+    margin-right: 10px;
+
 }
 
 #tips_buttons{
@@ -81,6 +82,10 @@ html {
     color: white;
     background-color: hsl(183, 100%, 15%);
     opacity: 0.9;
+}
+
+.button_tip:active {
+    background-color: cyan;
 }
 
 #custom {
@@ -109,7 +114,7 @@ html {
     font-weight: 500;
     text-align: end;
     outline: none;
-    padding-right: 10px;
+    margin-right: 10px;
 }
 
 #total_container {
@@ -146,3 +151,4 @@ html {
     text-transform: uppercase;
     font-weight: bold;
 }
+

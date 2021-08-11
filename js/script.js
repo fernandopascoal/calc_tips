@@ -1,9 +1,4 @@
 
-let input_bill = document.getElementById('value').value;
-let input_peoples = document.getElementById('peoples').value;
-
-
-
 function tip5() {
     let input_bill = document.getElementById('value').value;
     let input_peoples = document.getElementById('peoples').value;
@@ -102,5 +97,37 @@ function tip50() {
 }
 
 function custom() {
-    prompt("Qual porcentagem deseja dar?")
+
+    let custom = prompt("Qual porcentagem deseja dar?")
+    
+    let perc_custom = parseFloat(custom);
+
+    let custom_tip = perc_custom / 100;
+
+    let input_bill = document.getElementById('value').value;
+    let input_peoples = document.getElementById('peoples').value;
+
+    let bill = parseFloat(input_bill);
+    let peoples = parseInt(input_peoples);
+
+    let tip = bill*custom_tip;
+
+    let parce_tip = tip / peoples;
+    let parce_bill = (bill + tip) / peoples;
+
+    let total_tip = parce_tip.toFixed(2);
+    let total_bill = parce_bill.toFixed(2)
+
+
+
+    document.querySelector("#tip_value").innerHTML = `$${total_tip}`;
+    document.querySelector("#total_value").innerHTML = `$${total_bill}`
+}
+
+function reset() {
+
+    document.querySelector('#value').value = "";
+    document.querySelector('#peoples').value = "";
+    document.querySelector('#tip_value').innerHTML = "$0,00";
+    document.querySelector('#total_value').innerHTML = "$0,00";
 }
