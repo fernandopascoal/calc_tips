@@ -16,16 +16,25 @@ function tip5() {
         let total_tip = parce_tip.toFixed(2);
         let total_bill = parce_bill.toFixed(2)
 
+        document.getElementsByClassName("error")[0].style.display = 'none';
+        document.getElementsByClassName("error")[1].style.display = 'none';
+        document.querySelector('#n_peoples').style.border = "none"
+        document.querySelector('#bill').style.border = "none"
+
         document.querySelector("#tip_value").innerHTML = `$${total_tip}`;
         document.querySelector("#total_value").innerHTML = `$${total_bill}`
 
     } else if (input_bill > 0 && input_peoples == 0) {
         document.getElementsByClassName("error")[1].style.display = 'inline';
         document.querySelector('#n_peoples').style.border = "1px solid red"
+        document.getElementsByClassName("error")[0].style.display = 'none';
+        document.querySelector('#bill').style.border = "none"
 
     } else if (input_bill == 0 && input_peoples > 0) {
         document.getElementsByClassName("error")[0].style.display = 'inline';
         document.querySelector('#bill').style.border = "1px solid red"
+        document.getElementsByClassName("error")[1].style.display = 'none';
+        document.querySelector('#n_peoples').style.border = "none"
 
     } else {
         document.getElementsByClassName("error")[1].style.display = 'inline';
@@ -52,16 +61,25 @@ function tip10() {
         let total_tip = parce_tip.toFixed(2);
         let total_bill = parce_bill.toFixed(2)
 
+        document.getElementsByClassName("error")[0].style.display = 'none';
+        document.getElementsByClassName("error")[1].style.display = 'none';
+        document.querySelector('#n_peoples').style.border = "none"
+        document.querySelector('#bill').style.border = "none"
+
         document.querySelector("#tip_value").innerHTML = `$${total_tip}`;
         document.querySelector("#total_value").innerHTML = `$${total_bill}`
 
     } else if (input_bill > 0 && input_peoples == 0) {
         document.getElementsByClassName("error")[1].style.display = 'inline';
         document.querySelector('#n_peoples').style.border = "1px solid red"
+        document.getElementsByClassName("error")[0].style.display = 'none';
+        document.querySelector('#bill').style.border = "none"
 
     } else if (input_bill == 0 && input_peoples > 0) {
         document.getElementsByClassName("error")[0].style.display = 'inline';
         document.querySelector('#bill').style.border = "1px solid red"
+        document.getElementsByClassName("error")[1].style.display = 'none';
+        document.querySelector('#n_peoples').style.border = "none"
 
     } else {
         document.getElementsByClassName("error")[1].style.display = 'inline';
@@ -88,16 +106,25 @@ function tip15() {
         let total_tip = parce_tip.toFixed(2);
         let total_bill = parce_bill.toFixed(2)
 
+        document.getElementsByClassName("error")[0].style.display = 'none';
+        document.getElementsByClassName("error")[1].style.display = 'none';
+        document.querySelector('#n_peoples').style.border = "none"
+        document.querySelector('#bill').style.border = "none"
+
         document.querySelector("#tip_value").innerHTML = `$${total_tip}`;
         document.querySelector("#total_value").innerHTML = `$${total_bill}`
 
     } else if (input_bill > 0 && input_peoples == 0) {
         document.getElementsByClassName("error")[1].style.display = 'inline';
         document.querySelector('#n_peoples').style.border = "1px solid red"
+        document.getElementsByClassName("error")[0].style.display = 'none';
+        document.querySelector('#bill').style.border = "none"
 
     } else if (input_bill == 0 && input_peoples > 0) {
         document.getElementsByClassName("error")[0].style.display = 'inline';
         document.querySelector('#bill').style.border = "1px solid red"
+        document.getElementsByClassName("error")[1].style.display = 'none';
+        document.querySelector('#n_peoples').style.border = "none"
 
     } else {
         document.getElementsByClassName("error")[1].style.display = 'inline';
@@ -124,16 +151,25 @@ function tip25() {
         let total_tip = parce_tip.toFixed(2);
         let total_bill = parce_bill.toFixed(2)
 
+        document.getElementsByClassName("error")[0].style.display = 'none';
+        document.getElementsByClassName("error")[1].style.display = 'none';
+        document.querySelector('#n_peoples').style.border = "none"
+        document.querySelector('#bill').style.border = "none"
+
         document.querySelector("#tip_value").innerHTML = `$${total_tip}`;
         document.querySelector("#total_value").innerHTML = `$${total_bill}`
 
     } else if (input_bill > 0 && input_peoples == 0) {
         document.getElementsByClassName("error")[1].style.display = 'inline';
         document.querySelector('#n_peoples').style.border = "1px solid red"
+        document.getElementsByClassName("error")[0].style.display = 'none';
+        document.querySelector('#bill').style.border = "none"
 
     } else if (input_bill == 0 && input_peoples > 0) {
         document.getElementsByClassName("error")[0].style.display = 'inline';
         document.querySelector('#bill').style.border = "1px solid red"
+        document.getElementsByClassName("error")[1].style.display = 'none';
+        document.querySelector('#n_peoples').style.border = "none"
 
     } else {
         document.getElementsByClassName("error")[1].style.display = 'inline';
@@ -160,16 +196,25 @@ function tip50() {
         let total_tip = parce_tip.toFixed(2);
         let total_bill = parce_bill.toFixed(2)
 
+        document.getElementsByClassName("error")[0].style.display = 'none';
+        document.getElementsByClassName("error")[1].style.display = 'none';
+        document.querySelector('#n_peoples').style.border = "none"
+        document.querySelector('#bill').style.border = "none"
+
         document.querySelector("#tip_value").innerHTML = `$${total_tip}`;
         document.querySelector("#total_value").innerHTML = `$${total_bill}`
 
     } else if (input_bill > 0 && input_peoples == 0) {
         document.getElementsByClassName("error")[1].style.display = 'inline';
         document.querySelector('#n_peoples').style.border = "1px solid red"
+        document.getElementsByClassName("error")[0].style.display = 'none';
+        document.querySelector('#bill').style.border = "none"
 
     } else if (input_bill == 0 && input_peoples > 0) {
         document.getElementsByClassName("error")[0].style.display = 'inline';
         document.querySelector('#bill').style.border = "1px solid red"
+        document.getElementsByClassName("error")[1].style.display = 'none';
+        document.querySelector('#n_peoples').style.border = "none"
 
     } else {
         document.getElementsByClassName("error")[1].style.display = 'inline';
@@ -214,4 +259,8 @@ function reset() {
     document.querySelector('#peoples').value = "";
     document.querySelector('#tip_value').innerHTML = "$0,00";
     document.querySelector('#total_value').innerHTML = "$0,00";
+    document.getElementsByClassName("error")[1].style.display = 'none';
+    document.querySelector('#n_peoples').style.border = "none"
+    document.getElementsByClassName("error")[0].style.display = 'none';
+    document.querySelector('#bill').style.border = "none"
 }
