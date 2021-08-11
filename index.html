@@ -16,21 +16,21 @@
         <p class="subtitle">Bill</p>
         <div id="bill">
             <img src="images/icon-dollar.svg" alt="$" class="image">
-            <input type="number" name="value " id="value">
+            <input type="number" name="value" id="value">
         </div>
         <p class="subtitle">Select Tips %</p>
         <div id="tips_buttons">
-            <button class="button_tip">5%</button>
-            <button class="button_tip">10%</button>
-            <button class="button_tip">15%</button>
-            <button class="button_tip">25%</button>
-            <button class="button_tip">50%</button>
-            <button class="button_tip" id="custom">Custom</button>
+            <button class="button_tip" onclick="tip5()">5%</button>
+            <button class="button_tip" onclick="tip10()">10%</button>
+            <button class="button_tip" onclick="tip15()">15%</button>
+            <button class="button_tip" onclick="tip25()">25%</button>
+            <button class="button_tip" onclick="tip50()">50%</button>
+            <button class="button_tip" id="custom" onclick="custom()">Custom</button>
         </div>
         <p class="subtitle">Number of People</p>
         <div id="n_peoples">
             <img src="images/icon-person.svg" alt="" class="image">
-            <input type="number" name="peoples" id="peoples">
+            <input type="number" name="peoples" id="peoples" min="1" required>
         </div>
         <section id="total_container">
             <div class="tip_amount">
@@ -38,19 +38,20 @@
                     <p class="tip_text">Tip Amount</p>
                     <p class="subtitle">/person</p>
                 </div>
-                <p class="tip_value">10,00</p>
+                <p class="tip_value" id="tip_value"></p>
             </div>
             <div class="tip_amount">
                 <div>
                     <p class="tip_text">Total</p>
                     <p class="subtitle">/person</p>
                 </div>
-                <p class="tip_value">10,00</p>
+                <p class="tip_value" id="total_value"></p>
             </div>
             <button id="reset">Reset</button>
         </section>
 
     </section>
     
+    <script src="js/script.js"></script>
 </body>
 </html>
