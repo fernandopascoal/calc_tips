@@ -3,11 +3,12 @@
     padding: 0px;
     box-sizing: border-box;
     font-family: monospace;
-    max-width: 600px;
+    
 }
 
 html {
     margin: auto;
+    min-width: 350px;
 }
 
 #logo {
@@ -152,3 +153,42 @@ html {
     font-weight: bold;
 }
 
+@media (min-width: 600px) {
+    body {
+        background-color:  hsl(185, 41%, 84%);
+    }
+
+    #tips_calc {
+        width: 800px;
+        height: 300px;
+        display: flex;
+        margin: auto;
+        border-radius: 10px;
+    }
+
+    #form {
+        width: 50%;
+        margin-right: 15px;
+    }
+
+    #total_container {
+        width: 50%;
+        margin-left: 15px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .tip_value {
+        font-size: 24px;
+    }
+
+    .button_tip {
+        width: 30%;
+        height: 30px;
+    }
+
+    #reset {
+       align-self: flex-end;
+    }
+}
