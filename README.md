@@ -1,5 +1,6 @@
-#PROJETO CALC TIPS
-###Uma calculadora de gorjetas.
+#PROJETO CALC TIPS#
+
+###Uma calculadora de gorjetas.###
 
 Baseado em um desafio do Frontend Mentor.
 
